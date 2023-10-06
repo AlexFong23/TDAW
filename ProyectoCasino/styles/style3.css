@@ -1,0 +1,111 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white(27, 19, 10);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(99, 1, 1);
+}
+
+.boleto {
+    color: white; /* Cambia el color del texto a blanco */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.apuestas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.evento {
+    width: 40%;
+}
+
+.momios {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.momios ion-icon {
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.momios input {
+    width: 50px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+/* Estilos para la sección de importe */
+.Importe {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: left;
+}
+
+.Importe h4, .Importe h5 {
+    margin-bottom: 10px;
+}
+
+.Importe div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Agregamos algunos estilos adicionales para los números y estilizamos la caja de ganancia */
+.Importe h3 {
+    color: green;
+    font-size: 24px;
+    margin: 0;
+}
+
+.Importe div {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+
+.momios ion-icon:hover {
+    color: #007bff;
+}
+
+button{
+    display: block;
+    margin: auto; 
+    cursor: pointer;
+    width: 20%;
+    height: 60px;
+    background-color: rgb(99, 1, 1);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+}
+button:hover {
+    background-color: rgb(190, 2, 2);
+}

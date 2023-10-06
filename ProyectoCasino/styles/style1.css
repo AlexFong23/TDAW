@@ -1,0 +1,153 @@
+ body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    border: 1px solid #ccc;
+}
+
+ /* Estilos para el contenedor principal del encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Contenedor del header */
+.titulo {
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center;
+}
+
+/* Estilos para la imagen */
+.logo {
+    display: flex;
+}
+
+/* Estilos para el contenedor de texto */
+.logo img{
+    height: 100px;
+}
+
+
+
+nav a{
+    font-weight: 60;
+    padding-right: 5px;
+}
+
+/* Estilos para la sección de eventos */
+.eventos {
+    margin-top: 20px; /* Ajusta el margen superior según tus preferencias */
+}
+
+/* Estilos para el carrusel de imágenes */
+.carrusel {
+    width: 100%;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+}
+
+.carrusel ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+.carrusel li{
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+.carrusel img{
+    width: 100%;
+}
+
+@keyframes slide {
+    0% { margin-left: 0; }
+    25% { margin-left: 0; }
+
+    30% { margin-left: -100%; }
+    55% { margin-left: -100%; }
+
+    60% { margin-left: -200%; }
+    85% { margin-left: -200%; }
+
+    90% { margin-left: -300%; }
+    100% { margin-left: -300%; }  
+}
+
+
+.apuestas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.evento {
+    width: 40%;
+    color: white;
+}
+
+.momios {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.opcion {
+    width: 100px;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.opcion:hover {
+    background-color: #f0f0f0;
+}
+
+/* Pie de pagina */
+footer {
+    background-color: rgb(99, 1, 1);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.opciones {
+    display: flex;
+    justify-content: space-around;
+}
+
+.opciones a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.opciones a:hover {
+    background-color: rgb(190, 2, 2);
+}
+
+

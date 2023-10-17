@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+}
+   
+header {
+    display: grid;
+    background-color: blue;
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
+}
+
+h1 {
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-size: 40px;
+    margin: 20px 20px;
+}
+

@@ -1,0 +1,266 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  font-size: 16px; 
+}
+
+
+header {  
+  background-image: url("../img/header.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+header nav {
+  padding: 20px;
+  color: white;
+  font-size: 0.875em; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#logo {
+  font-size: 2.5em; 
+}
+
+#links {
+  font-size: 18px;
+}
+
+#links a {
+  margin: 15px;
+}
+
+a {
+  cursor: pointer;
+}
+
+a.button {
+  background-color: #a8a6a1;
+  padding: 10px 15px;
+  border: 2px solid #a8a6a1;
+  border-radius: 10px;
+}
+
+a.button:hover {
+  background-color: rgba(195, 194, 194, 0.5);
+  color: black;
+}
+
+header h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 1em; 
+  line-height: 1.5;
+}
+
+header h1 em {
+  font-size: 1.25em; 
+  font-style: normal;
+  letter-spacing: 1px;
+}
+
+header h1 strong {
+  font-style: normal;
+  font-size: 4.25em; 
+  letter-spacing: 1px;
+}
+
+header h1 a {
+  font-size: 0.9em; 
+}
+
+section {
+  margin: 75px 100px;
+  text-align: center;
+}
+
+#main p {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 125px;
+  width: 70%;
+}
+
+#main h1 {
+  font-size: 1.75em; /* Use relative font size */
+}
+
+p {
+  line-height: 2.25em; /* Use relative line-height */
+}
+
+footer {
+  background-color: rgb(45, 45, 45);
+  color: rgba(255, 255, 255, 0.8);
+  padding: 35px;
+  text-align: center;
+}
+
+footer p {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+address {
+  font-style: normal;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5em;
+}
+
+.details img{
+  width: 100%;
+  height: auto;
+}
+
+.details img:first-child{
+  margin-right: 100px;
+}
+
+.details img:nth-child(2){
+  margin-left: 100px;
+}
+
+details h1 {
+  font-size: 38px;
+}
+
+details div a.button {
+  color: white;
+}
+
+details div a.button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+/* Mobile Menu for screens <= 500px */
+#menu {
+  display: none;
+}
+
+#menu div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+}
+
+/* 500px <=  */
+@media (max-width: 500px) {
+  body {
+    font-size: 14px; 
+  }
+
+  header {
+    height: 300px;
+    line-height: 1.2;
+  }
+
+  header h1 strong {
+    font-size: 2em;
+    letter-spacing: 4px;
+  }
+
+  section {
+    margin: 40px 10px; 
+  }
+
+  .details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 5em;
+  }
+
+  #uno {
+    order: 2;
+  }
+
+  #dos {
+    order: 1; 
+  }
+
+  #links {
+    display: none;
+  }
+
+  #menu {
+    display: block;
+  }
+}
+
+
+/* <= 1200 */
+@media (min-width: 1200px) {
+  body {
+    font-size: 18px; 
+  }
+
+  header {
+    height: 800px; 
+  }
+
+  #logo {
+    font-size: 3em; 
+  }
+
+  #links {
+    font-size: 20px; 
+  }
+
+  #main p {
+    margin-bottom: 150px; 
+  }
+
+  #main h1 {
+    font-size: 2em; 
+  }
+
+  section {
+    margin: 100px; 
+  }
+
+  footer {
+    padding: 50px; 
+  }
+
+  .details {
+    margin: 6em; 
+  }
+
+  .details h1 {
+    font-size: 40px;
+  }
+
+  .details div a.button {
+    font-size: 1.1em; 
+  }
+
+  #menu {
+    display: none; 
+  }
+
+  #links {
+    display: flex; 
+  }
+}

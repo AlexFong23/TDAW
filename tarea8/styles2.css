@@ -1,0 +1,135 @@
+/* Estilos generales */
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: rgb(21, 152, 213);
+    color: white;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    margin-left: 1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: .6rem;
+    margin-right: 4rem;
+    margin-left: rem;
+}
+
+/* Elementos de la izquierda */
+
+#railLeft {
+    width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+}
+
+#railLeft div {
+    width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+}
+
+.alertLeft {
+    background-color: #cec7c771;
+    padding: 1rem;
+    text-align: left;
+    color: rgb(64, 48, 48);
+    margin-top: .3em;
+    margin-bottom: 2rem;
+    opacity: .6;
+}
+
+#mensajes {
+    text-align: left;
+    border: #cec7c771 1px solid;
+    background-color: #f3eeee71;
+    padding: 1em;
+    width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+    margin-bottom: 2rem;
+}
+
+.great {
+    width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+    padding: 1rem;
+    background-color: #f3eeee71;
+    margin-bottom: 2.5rem;
+}
+
+.great h3 {
+    background-color: rgb(156, 197, 219);
+    width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+    white-space: normal;
+    text-align: left;
+    padding: 1em;
+    margin: 0;
+}
+
+#recentMessageList, #sellList, #chList {
+    padding: 1rem;
+    margin-top: 0;
+}
+
+#chList li {
+    display: flex;
+    margin-left: 1rem;
+}
+
+.chNumber {
+    margin-right: 1rem;
+    font-size: xx-large;
+    color: rgb(98, 97, 97);
+}
+
+#recentMessageList img {
+    margin-right: 1em;
+    float: left;
+}
+
+/* Estilos medio */
+
+#middle {
+    width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+}
+
+.breadcrumb {
+    margin-top: 1rem;
+    background-color: rgb(239, 239, 244);
+    padding: .5rem;
+    text-align: center; /* Centra el texto en pantallas pequeñas */
+}
+
+#company {
+    float: none; /* Elimina el float en pantallas pequeñas */
+}
+
+#clientInfo {
+    float: none; /* Elimina el float en pantallas pequeñas */
+}
+
+#table-container {
+    margin-top: 2rem; /* Espacio superior ajustado para pantallas más pequeñas */
+    margin-bottom: 2rem;
+    border-top: 1px solid gray;
+}
+
+.SendButton {
+    background-color: rgb(21, 152, 213);
+    color: white;
+    padding: 5px 1rem;
+    text-decoration: none;
+    display: block; /* Para centrar en pantallas pequeñas */
+    margin: 1rem auto; /* Centrar en pantallas pequeñas */
+}
+
+/* Estilos derecha */
+
+#railRight {
+    width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+}

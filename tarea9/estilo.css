@@ -1,0 +1,76 @@
+body {
+    margin: 1px;
+    padding: 0;
+    border: 5px black solid;
+}
+
+
+h1 {
+    text-align: center;
+    border-bottom: 5px black solid;
+    color: #333;
+    font-family: Arial, sans-serif;
+    padding: 2rem;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+input {
+    padding: 8px;
+    margin: 3em;
+    display: block;
+    width: 40%;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    text-align: center;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: rgb(179, 177, 177);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    height: 3em;
+    margin: 3em;
+}
+
+button:hover {
+    background-color:  rgb(98, 98, 99);
+}
+
+#listaTareas {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#listaTareas li {
+    cursor: pointer;
+    padding: auto;
+    background-color: #f46b6b;
+    border-radius: 5px;
+    text-align: center;
+    width: 80%;
+    min-height: 100px;
+    margin: 3em;
+}
+
+#listaTareas li.completado {
+    text-decoration: line-through;
+    background-color: #4CAF50;
+}
+
+.completado {
+    text-decoration: line-through; 
+    color: gray; 
+}

@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+}
+
+body {
+    background-color: #111111; 
+    width: 100%;
+}
+
+/* Header */
+.header {
+    background-color: rgb(93, 6, 6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    padding: 5px 10%;
+    width: 100%;
+}
+
+.header .logo{
+    cursor: pointer;
+}
+
+.header .logo img{
+    height: 4rem;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.nav-links{
+    list-style: none;
+}
+
+.nav-links li{
+    display: inline-block;
+    padding: 0 20px;    
+}
+
+.header .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+.nav-links a{
+    text-decoration: none;   
+    font-size: 700;
+    color: #eceff1; 
+}
+
+.nav-links li a:hover{
+    color: #ffbc0e;
+}
+
+.header .btn button{
+    font-weight: 700;
+    color: #1b3039;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.header .btn button:hover{
+    background-color: #e2f1f8;
+    color: #ffbc0e;
+    transform: scale(1.1);
+}
+
+/* Carusel */
+
+.carrusel {
+    width: 100%;
+    height: 12rem; 
+    overflow: hidden;
+
+}
+
+.carrusel ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+.carrusel li{
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+.carrusel img{
+    width: 100%;
+}
+
+
+
+@keyframes slide {
+    0% { margin-left: 0; }
+    25% { margin-left: 0; }
+
+    30% { margin-left: -100%; }
+    55% { margin-left: -100%; }
+
+    60% { margin-left: -200%; }
+    85% { margin-left: -200%; }
+
+    90% { margin-left: -300%; }
+    100% { margin-left: -300%; }  
+}
+
+/* Eventes de apuestas */
+
+
+
+.apuesta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+
+#evento-vista {
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.evento h3 {
+    color: white;
+}
+
+.momios {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Pie de pagina */
+footer {
+    background-color: rgb(93, 6, 6);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 3rem;
+}
+
+.redes-sociales a {
+    display: inline-block;
+    margin-left: 1rem;
+    margin-bottom: 0;
+    font-size: .1em;
+}
+
+.redes-sociales img {
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 20%;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+.nav-links > li {
+    position: relative;
+    z-index: 1;
+}
+.nav-links > li:hover{
+    z-index: 2;
+}
+
+.submenu{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(0,0,0,.5);
+    top: -400%;
+    z-index: 3;
+}
+.nav-links > li:hover .submenu{
+    display: none;
+}
+
+.submenu > li:hover{
+    background-color: gray;
+}
+.submenu li {
+    margin-bottom: 0px;
+}
+
+
+/* Botones */
+
+.boton button{
+    font-size: .6rem;
+    color: #1b3039;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: .5em;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    width: 7rem;
+    height: 4rem;
+    align-items: center;
+}
+
+
+.boton button:hover{
+    background-color: #e2f1f8;
+    color: #ffbc0e;
+    transform: scale(1.1);
+}
+
+/* Agrega estos estilos al archivo de estilos de la barra lateral */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111111; 
+    overflow-x: hidden;
+    transition: 0.5s;
+    font-family: 'Poppins', sans-serif;
+    color: white; 
+    align-items: center;
+    text-align: center;
+}
+
+.sidebar .titulo {
+    background-color: rgb(99, 1, 1);
+    width: 100%;
+    height: 3em;
+    padding: .8em;
+}
+
+.sidebar .boleto {
+    color: white; 
+}
+
+.sidebar .apuestas {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+#momio {
+    background-color: white;
+    color: black; 
+    padding: 0.5em; 
+    margin: 0; 
+}
+
+.sidebar .evento {
+    width: 40%;
+}
+
+.sidebar .monto {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar .monto div {
+    display: flex;
+}
+
+.sidebar .monto ion-icon {
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.sidebar .monto input {
+    width: 30%;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    margin: 0 10px;
+    color: black;
+}
+
+.sidebar .importe {
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #111111;
+    border: 2px solid black;
+    text-align: left;
+    margin: 1rem;
+}
+
+.sidebar .importe h5 {
+    margin-bottom: 10px;
+}
+
+.sidebar .importe div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar .importe h3 {
+    color: green;
+    font-size: 24px;
+    margin: 0;
+    background-color: white;
+}
+
+.sidebar .importe div {
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.sidebar .monto ion-icon:hover {
+    color: rgb(99, 1, 1);
+}
+
+.sidebar button {
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    width: 30%;
+    height: 60px;
+    background-color: rgb(99, 1, 1);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+}
+
+.sidebar button:hover {
+    background-color: rgb(190, 2, 2);
+}
+
+textarea {
+    width: 50%;
+    height: 2em;  
+    margin: 0;   
+}
+
+.error-message {
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* */
+
+@media only screen and (max-width: 900px) {
+    body {
+        font-size: 18px;
+    }
+
+    #footer-links {
+        display: none;
+    }
+
+    .nav-links {
+        display: inline-block; 
+    }
+
+    .btn {
+        display: flex;
+        margin-top: 10px;
+    }
+
+    .btn button {
+        width: 100%; 
+    }
+
+    .carrusel img {
+        width: 100%;
+    }
+    
+
+    footer {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    
+    #evento-vista {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .apuesta {
+        width: 80%;
+        margin: 10px;
+    }
+
+    .evento {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .momios {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boton button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+

@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+a {
+	color: #283593;
+	text-decoration: none;
+}
+
+h3 {
+	margin-top: 12px;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+}
+
+body {
+    background-color: #111111; 
+    width: 100%;
+}
+
+body {
+	background-color: #111111; /* Cambia este color según tus necesidades */
+	font-family: 'Roboto', sans-serif;
+}
+
+/* Header */
+.header {
+    background-color: rgb(93, 6, 6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    padding: 5px 10%;
+    width: 100%;
+}
+
+
+.header .logo{
+    cursor: pointer;
+}
+
+.header .logo img{
+    height: 4rem;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.nav-links{
+    list-style: none;
+}
+
+.nav-links li{
+    display: inline-block;
+    padding: 0 20px;    
+}
+
+.header .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+.nav-links a{
+    text-decoration: none;   
+    font-size: 700;
+    color: #eceff1; 
+}
+
+.nav-links li a:hover{
+    color: #ffbc0e;
+}
+
+.header .btn button{
+    font-weight: 700;
+    color: #1b3039;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.header .btn button:hover{
+    background-color: #e2f1f8;
+    color: #ffbc0e;
+    transform: scale(1.1);
+}
+
+main {
+	border-radius: 5px;
+	background-color: rgb(93, 6, 6); 
+	margin-top: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: 30%;
+	width: 550px;
+	width: 41%;
+}
+
+section#estado {
+	margin-bottom: 25px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	border-radius: 5px;
+	text-align: center;
+	background-color: rgb(139, 13, 13);
+	color: black;
+	font-size: 25px;
+	font-family: 'Roboto Mono', monospace;
+}
+
+section#Slots {
+	border-radius: 15px;
+	background-color: #FAFAFA;
+	width: auto;
+}
+
+section#Girar {
+	margin-top: 25px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	border-radius: 5px;
+	text-align: center;
+	background-color: #AB47BC;
+	color: #FFFFFF;
+	font-size: 25px;
+}
+
+section#Girar:hover {
+	background-color: #BA68C8;
+}
+
+section#opciones {
+	margin-top: 20px;
+	padding-top: 5px;
+	border-radius: 5px;
+	background-color: #C62828;
+	color: #FFFFFF;
+}
+
+.option {
+	padding-left: 5px;
+}
+
+#ranura1, #ranura2, #ranura3 {
+	display: inline-block;
+	margin-top: 5px;
+	margin-left: 15px;
+	margin-right: 15px;
+	background-size: 150px;
+	width: 150px;
+	height: 150px;
+}
+
+.a1 {
+	background-image: url("/res/tiles/seven.png");
+}
+
+.a2 {
+	background-image: url("/res/tiles/cherries.png");
+}
+
+.a3 {
+	background-image: url("/res/tiles/club.png");
+}
+
+.a4 {
+	background-image: url("/res/tiles/diamond.png");
+}
+
+.a5 {
+	background-image: url("/res/tiles/heart.png");
+}
+
+.a6 {
+	background-image: url("/res/tiles/spade.png");
+}
+
+.a7 {
+	background-image: url("/res/tiles/joker.png");
+}

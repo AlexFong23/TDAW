@@ -17,30 +17,27 @@
         <nav>
             <ul class="nav-links">
                 <li><a href="#">Services</a></li>
-                <li><a href="index.html">Mis apuestas</a></li>
+                <li><a href="#">Mis apuestas</a></li>
                 <li><a href="tragamonedas.html">Slot Machine</a></li>
             </ul>
         </nav>
         <a class="btn" href="logim.html"><button>Iniciar Sesion</button></a>
     </header>
 
-    <form action="" class="login-form" id="login-form" onsubmit="return validateLogin()">
-        <h2>Login</h2>
+    <form action="" class="contact-form" id="contact-form" >
+        <h2>Contacto</h2>
         <article class="input-box">
             <span class="icon"><ion-icon name="mail"></ion-icon></span>
-            <input type="email" id="email" placeholder="Email">
+            <input id="user-email" placeholder="Correo del Usuario">
         </article>
         <article class="input-box">
-            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-            <input type="password" id="password" placeholder="Password">
+            <span class="icon"><ion-icon name="chatbox"></ion-icon></span>
+            <textarea id="comments" placeholder="Comentarios"></textarea>
         </article>
-        <article id="error" class="error-message"></article>
-        <article class="remember-forgot">
-            <a href="#">¿Olvidaste la contraseña?</a>
-        </article>
-        <button type="submit" id="login">Login</button>
-        <article class="register-link">
-            <p>¿Aún no tienes cuenta? <a href="registro.html">Crear cuenta</a></p>
+        <article id="error-message" class="error-message"></article>
+        <article class="buttons-box">
+            <button type="submit" id="send">Enviar</button>
+            <button type="button" id="cancelButton">Cancelar</button>
         </article>
     </form>
 </body>

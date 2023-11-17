@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Slot Machine</title>
+    <link rel="stylesheet" href="/styles/estilo_tragamonedas.css">
+    <script src="/scripts/script_tragamonedas.js" defer></script>
+    <link rel="stylesheet" href="styles/estilo_spam.css">
+</head>
+
+<body>
+    <div class="notification-container" id="otherNotificationContainer">
+        <div class="other-notification" id="otherNotification">
+            <span class="close-btn" onclick="closeOtherNotification()">&times;</span>
+            <p>¡Chelear es malo!</p>
+        </div>
+    </div>
+    <div class="other-notification-container" id="notificationContainer">
+        <div class="notification">
+            <span class="close-btn" onclick="closeNotification()">&times;</span>
+            <p>¡No fumes es malo importante!</p>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="logo">
+            <img src="/images/logo_bet.jpg" alt="Logo de la marca" title="Bet Pulse">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Services</a></li>
+                <li><a href="index.html">Mis apuestas</a></li>
+                <li><a href="tragamonedas.html">Slot Machine</a></li>
+            </ul>
+        </nav>
+        <a class="btn" href="logim.html"><button>Iniciar Sesion</button></a>
+    </header>
+
+    <main>
+        <section id="estado">Maquina Tragamonedas</section>
+            <section id="Slots">
+                <div id="ranura1" class="a1"></div>
+                <div id="ranura2" class="a1"></div>
+                <div id="ranura3" class="a1"></div>
+            </section>
+        <section onclick="hacerGiro()" id="Girar">Dale un giro!</section>
+
+    </main>
+
+</body>
+
+</html>

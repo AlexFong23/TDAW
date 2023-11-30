@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="puzzle.js" defer></script>
+</head>
+
+<body>
+    <div class="cuadricula"></div>
+
+    <div class="opciones">
+      <button id="play" class="botones">Play</button>
+      <button id="revolver" class="botones">Revolver</button>
+      <button id="bfs" class="botones">BFS</button>
+    </div>
+    <div class="estadisticas">
+      <div id="movimientos">Movimientos: 0</div>
+      <div id="tiempo">Tiempo: 0s</div>
+    </div>
+
+    <h1 id="mensaje" class="message" style="display: none;">Ganaste! ¿Quieres reiniciar el juego?</h1>
+    <button id="reiniciar" style="display: none;">Reiniciar</button>
+</body>
+
+</html>
